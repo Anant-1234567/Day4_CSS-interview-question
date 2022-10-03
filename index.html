@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4 css Interview Question & Answer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Serif:wght@100&display=swap');
+ 
+
+        .test{
+            
+            text-align: center;
+            height: 400px;
+            background-image: url("https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/mastehead(web).svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+        .btn {
+            margin: 20px auto;
+            width: 200px;
+            background-color: aqua;
+            height: 30px;
+            border-radius: 14px;
+        }
+        img {
+            margin-top: 20px;
+        }
+        .navbar {
+            float: right;
+            margin-right: 70px;
+            display: flex;
+        }
+        .button {
+            padding: 30px;
+            font-family: 'Poppins', sans-serif;
+ 
+ 
+        }
+        .container {
+            height:50vh;
+            width:100vw;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-evenly;
+        
+            
+            
+        }
+        .child {
+            height:200px;
+            width:200px;
+            background-color: black;
+            border:2px solid yellow;
+            color:white;
+            text-align: center;
+            
+
+        }
+        @media screen and (max-width:600px) {
+             .container{
+                  flex-direction: column;
+              }
+            }
+        .btn1 {
+            width:200px;
+            height: 50px;
+            font-size:large;
+            background-color:rgb(34, 181, 230); 
+            color: white;
+            border: 1px solid white;
+            padding:5px ;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media screen and (max-width:600px) {
+             .btn1 {
+                background-color: coral;
+             }
+        }
+        .container2 {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+        }
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-2 {
+            flex-basis: 160px;
+        }
+         #item-3 {
+            
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+        }
+ 
+
+      
+
+
+
+              
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Day4 css Interview Question & Answer</h1>
+    1)Create masterhead - add background image and put a text at the center , with button below it ?<br><br>
+    Ans:- <div class="test">
+              <h1>Hello i m Anant</h1>
+              <input type="button" value="Submit" class="btn" />
+            </div>
+            <br><br>
+    2)Create header -- left side will have logo and right side will have 4 button?<br><br>
+    Ans:- 
+    <div>
+        <div class="navbar">
+            <div class="button">Course Details</div>
+            <div class="button">Project</div>
+            <div class="button">Assessments</div>
+            <div class="button">Mock Interviews</div>
+        </div>
+        <div class="logo">
+        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg" height="40px" alt="">
+        </div>
+    </div>
+    <br><br>
+    3)Create 3 cards of height & width 200 px with texts in it , the card should be horizontally placed in web view and vertically in mobile view?<br><br>
+    Ans:- 
+    <div class="container">
+        <div class="child">Card1</div>
+        <div class="child">Card2</div>
+        <div class="child">Card3</div>
+    </div>
+    <br><br>
+    4)Replicate the button on Masthead of PrepBytes, Change the background color of button for mobile view and ipad?<br><br>
+    Ans:- <a href="https://prepbytes.com"><button class="btn1">Prepbytes</button></a>
+    <br><br>
+    5)Write code to show implementation of flex?<br><br>
+    Ans:-  
+    <h1>This is Implementation of Flexbox</h1>
+    <div class="container2">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+    </div>
+
+
+             
+
+
+
+    
+</body>
+</html>
